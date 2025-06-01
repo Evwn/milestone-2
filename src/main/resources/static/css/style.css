@@ -1,0 +1,54 @@
+/* Custom Fonts */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Custom Colors */
+.navbar {
+    background: linear-gradient(to right, #1a237e, #3949ab) !important;
+}
+
+.btn-primary {
+    background-color: #1a237e;
+    border-color: #1a237e;
+}
+
+.btn-primary:hover {
+    background-color: #3949ab;
+    border-color: #3949ab;
+}
+
+/* Card Styles */
+.card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: #3949ab;
+    box-shadow: 0 0 0 0.2rem rgba(57, 73, 171, 0.25);
+}
+
+/* Footer Styles */
+.footer {
+    position: relative;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    background-color: #f8f9fa;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+} 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/main}">
+<head>
+    <title>Welcome</title>
+</head>
+<body>
+    <div layout:fragment="content">
+        <div class="text-center">
+            <h1 class="display-4 mb-4">Welcome to Enterprise App</h1>
+            <p class="lead mb-4">Your complete enterprise solution for business management</p>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">New User?</h5>
+                            <p class="card-text">Create an account to get started</p>
+                            <a th:href="@{/register}" class="btn btn-primary">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Existing User?</h5>
+                            <p class="card-text">Sign in to your account</p>
+                            <a th:href="@{/login}" class="btn btn-success">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
