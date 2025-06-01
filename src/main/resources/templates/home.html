@@ -6,25 +6,68 @@
 </head>
 <body>
     <div layout:fragment="content">
-        <div class="text-center">
-            <h1 class="display-4 mb-4">Welcome to Enterprise App</h1>
-            <p class="lead mb-4">Your complete enterprise solution for business management</p>
-            <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">New User?</h5>
-                            <p class="card-text">Create an account to get started</p>
-                            <a th:href="@{/register}" class="btn btn-primary">Register Now</a>
+        <div class="container py-5">
+            <div class="text-center fade-in">
+                <h1 class="display-4 mb-4 fw-bold">Welcome to Enterprise App</h1>
+                <p class="lead mb-5 text-muted">Your complete enterprise solution for business management</p>
+                
+                <div class="row justify-content-center g-4">
+                    <div class="col-md-5">
+                        <div class="card shadow-lg rounded-lg h-100">
+                            <div class="card-body p-5">
+                                <div class="mb-4">
+                                    <i class="fas fa-user-plus fa-3x text-primary mb-3"></i>
+                                    <h3 class="card-title h4 mb-3">New User?</h3>
+                                    <p class="card-text text-muted mb-4">Start your journey with us by creating a new account. Get access to all our features and begin managing your business efficiently.</p>
+                                </div>
+                                <a th:href="@{/register}" class="btn btn-primary btn-lg w-100">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-5">
+                        <div class="card shadow-lg rounded-lg h-100">
+                            <div class="card-body p-5">
+                                <div class="mb-4">
+                                    <i class="fas fa-sign-in-alt fa-3x text-success mb-3"></i>
+                                    <h3 class="card-title h4 mb-3">Existing User?</h3>
+                                    <p class="card-text text-muted mb-4">Welcome back! Sign in to your account to continue managing your business and accessing your dashboard.</p>
+                                </div>
+                                <a th:href="@{/login}" class="btn btn-success btn-lg w-100">Login</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Existing User?</h5>
-                            <p class="card-text">Sign in to your account</p>
-                            <a th:href="@{/login}" class="btn btn-success">Login</a>
+                
+                <div class="mt-5 pt-4">
+                    <h2 class="h3 mb-4">Why Choose Us?</h2>
+                    <div class="row justify-content-center g-4">
+                        <div class="col-md-4">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <i class="fas fa-shield-alt fa-2x text-primary mb-3"></i>
+                                    <h4 class="h5 mb-3">Secure & Reliable</h4>
+                                    <p class="text-muted mb-0">Enterprise-grade security and reliability for your business operations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <i class="fas fa-tachometer-alt fa-2x text-primary mb-3"></i>
+                                    <h4 class="h5 mb-3">Fast & Efficient</h4>
+                                    <p class="text-muted mb-0">Optimized performance to handle your business needs quickly.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <i class="fas fa-headset fa-2x text-primary mb-3"></i>
+                                    <h4 class="h5 mb-3">24/7 Support</h4>
+                                    <p class="text-muted mb-0">Round-the-clock support to help you whenever you need it.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
